@@ -15,29 +15,53 @@
 
 @-webkit-keyframes MOV1 {
   0% {
-    text-shadow: 0 0 0px #ffffff00;
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
   }
-  50% {
+  25% {
     text-shadow: 0 0 10px #ffffff00;
     -webkit-transform: scale(1.3);
             transform: scale(1.3);
   }
+  50% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
   100% {
-    text-shadow: 0 0 0px #ffffff00;
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
   }
 }
 
 @keyframes MOV1 {
   0% {
-    text-shadow: 0 0 0px #ffffff00;
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
   }
-  50% {
+  25% {
     text-shadow: 0 0 10px #ffffff00;
     -webkit-transform: scale(1.3);
             transform: scale(1.3);
   }
+  50% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
   100% {
-    text-shadow: 0 0 0px #ffffff00;
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
   }
 }
 
@@ -98,13 +122,30 @@
 }
 
 .C_fluid .nav .LOGO {
-  width: 100px;
-  height: 50px;
-  background-color: #5665;
+  width: 120px;
+  height: 60px;
+  border: #000000 2px solid;
+  background-image: url(../IMG_0806.GIF);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.C_fluid .nav .LOGO:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .C_fluid .nav .nav-link {
   margin: 0 1vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.C_fluid .nav .nav-link:hover {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .C_fluid .banner {
@@ -217,15 +258,28 @@
 }
 
 .C_fluid .banner .MyTop .MyText {
+  height: 300px;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   margin-bottom: 5vh;
-  margin-top: 5vh;
   color: #829789;
   -webkit-animation: infinite linear MOV3 8s;
           animation: infinite linear MOV3 8s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .C_fluid .banner .MyTop .MyText .MYY {
@@ -254,20 +308,35 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #5d7968;
-  height: 300px;
+  height: 600px;
   width: 100vw;
 }
 
 .C_fluid .banner .Myicon .AA {
   font-size: 36px;
   color: #FFF;
+  position: relative;
+}
+
+.C_fluid .banner .Myicon .AA::before {
+  content: '';
+  background-color: #ffffff;
+  position: absolute;
+  width: 500px;
+  height: 2px;
+  top: 10vh;
+  left: -300%;
 }
 
 .C_fluid .banner .Myicon .BB {
   font-size: 24px;
   color: #ffffff;
-  margin: -15px 0 3vh;
+  margin: 5px 0 5vh;
   -webkit-animation: infinite linear MOV2 3s;
           animation: infinite linear MOV2 3s;
 }
@@ -281,7 +350,32 @@
   color: #FFF;
 }
 
+.C_fluid .banner .Myicon .ttt {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 900;
+  margin-right: 2vw;
+}
+
 .C_fluid .banner .Myicon .ICONN {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2vh;
+}
+
+.C_fluid .banner .Myicon .ICONN .DS {
+  margin: 3vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,10 +389,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 2vh;
 }
 
-.C_fluid .banner .Myicon .ICONN .IcoMG {
+.C_fluid .banner .Myicon .ICONN .DS .IcoMG {
   -webkit-animation: infinite linear MOV1 5s;
           animation: infinite linear MOV1 5s;
   margin: 0 1vw;
@@ -306,12 +399,12 @@
   transition: 0.3s;
 }
 
-.C_fluid .banner .Myicon .ICONN .IcoMG:hover {
-  -webkit-transform: rotate(-45deg) scale(1.5);
-          transform: rotate(-45deg) scale(1.5);
+.C_fluid .banner .Myicon .ICONN .DS .IcoMG:hover {
+  width: 100px;
+  height: 100px;
 }
 
-.C_fluid .banner .Myicon .ICONN .PS {
+.C_fluid .banner .Myicon .ICONN .DS .PS {
   width: 80px;
   height: 80px;
   background-image: url(../icon/PS.PNG);
@@ -319,7 +412,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .AI {
+.C_fluid .banner .Myicon .ICONN .DS .AI {
   width: 80px;
   height: 80px;
   background-image: url(../icon/AI.PNG);
@@ -327,7 +420,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .PRO {
+.C_fluid .banner .Myicon .ICONN .DS .PRO {
   width: 80px;
   height: 80px;
   background-image: url(../icon/PRO.PNG);
@@ -335,7 +428,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .AF {
+.C_fluid .banner .Myicon .ICONN .DS .AF {
   width: 80px;
   height: 80px;
   background-image: url(../icon/FR.PNG);
@@ -343,7 +436,37 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .WO {
+.C_fluid .banner .Myicon .ICONN .WD {
+  margin: 3vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.C_fluid .banner .Myicon .ICONN .WD .IcoMG {
+  -webkit-animation: infinite linear MOV1 5s;
+          animation: infinite linear MOV1 5s;
+  margin: 0 1vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.C_fluid .banner .Myicon .ICONN .WD .IcoMG:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.C_fluid .banner .Myicon .ICONN .WD .WO {
   width: 80px;
   height: 80px;
   background-image: url(../icon/WO.PNG);
@@ -351,7 +474,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .EX {
+.C_fluid .banner .Myicon .ICONN .WD .EX {
   width: 80px;
   height: 80px;
   background-image: url(../icon/EX.PNG);
@@ -359,7 +482,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .PP {
+.C_fluid .banner .Myicon .ICONN .WD .PP {
   width: 80px;
   height: 80px;
   background-image: url(../icon/PP.PNG);
@@ -367,7 +490,37 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .HT {
+.C_fluid .banner .Myicon .ICONN .CD {
+  margin: 3vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.C_fluid .banner .Myicon .ICONN .CD .IcoMG {
+  -webkit-animation: infinite linear MOV1 5s;
+          animation: infinite linear MOV1 5s;
+  margin: 0 1vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.C_fluid .banner .Myicon .ICONN .CD .IcoMG:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.C_fluid .banner .Myicon .ICONN .CD .HT {
   width: 80px;
   height: 80px;
   background-image: url(../icon/HT5.PNG);
@@ -375,7 +528,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .CS {
+.C_fluid .banner .Myicon .ICONN .CD .CS {
   width: 80px;
   height: 80px;
   background-image: url(../icon/CS.PNG);
@@ -383,7 +536,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .SCS {
+.C_fluid .banner .Myicon .ICONN .CD .SCS {
   width: 80px;
   height: 80px;
   background-image: url(../icon/SCS.PNG);
@@ -439,6 +592,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.C_fluid .banner .MyLink .WW .QQ::before {
+  content: '';
+  background-color: #163a25;
+  position: absolute;
+  width: 500px;
+  height: 2px;
+  top: -1vh;
 }
 
 .C_fluid .banner .MyLink .WW a {
@@ -447,8 +610,8 @@
   margin: 0 2vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-animation: infinite linear MOV1 3s;
-          animation: infinite linear MOV1 3s;
+  -webkit-animation: infinite linear MOV3 2s;
+          animation: infinite linear MOV3 2s;
 }
 
 .C_fluid .banner .MyLink .WW a:hover {
