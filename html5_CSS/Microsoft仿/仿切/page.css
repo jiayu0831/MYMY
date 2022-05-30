@@ -1,0 +1,170 @@
+/* 卡片區塊樣式控制 */
+
+/* 大區塊底控制 */
+.page1{
+    overflow: hidden;
+    height: 460px;
+    /* width: 1500px; */
+    /* background-color: #AAAAAA; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 卡片置中用 */
+.p1{
+    width: 350px;
+    height: 400px;
+}
+
+/* 圖片樣式 */
+.p_image_1{
+    width: 100%;
+    height: 200px;
+    background-image: url(./image/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+.p_image_2{
+    width: 100%;
+    height: 200px;
+    background-image: url(./image/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+.p_image_3{
+    width: 100%;
+    height: 200px;
+    background-image: url(./image/3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+.p_image_4{
+    width: 100%;
+    height: 200px;
+    background-image: url(./image/4.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+/* 滑鼠移置圖片變淡效果 */
+.p_image_1:hover,
+.p_image_2:hover,
+.p_image_3:hover,
+.p_image_4:hover,
+.p_image_2_1:hover,
+.p_image_2_2:hover,
+.p_image_2_3:hover,
+.p_image_2_4:hover{
+    opacity: 0.6;
+}
+
+/* 黃底文字樣式 */
+.p_new_1{
+    /* 短的 */
+    background-color: #FFCC00;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight:bold;
+    margin: 10px 0 0 0;
+}
+.p_new_no{
+    /* 無設定 */
+    background-color: #ffcc0000;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 0 0 0;
+}
+.p_new_2{
+    /* 長的 */
+    background-color: #FFCC00;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight:bold;
+    margin: 10px 0 0 0;
+}
+
+.p_title{
+    font-size: 22px;
+    font-weight:bold;
+    margin: 10px 0;
+}
+
+.p_link{
+    margin: 10px 0;
+    font-size: 18px;
+    color:#0088BB ;
+    font-weight:bold;
+}
+
+/* 連結底線設定 */
+.link_underline{
+    position: relative;
+}
+.link_underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0px;
+    bottom: 0;
+    top: 25px;
+    background-color: #0089bb00;
+    transition: 0.3s;
+}
+.link_underline:hover:after{
+    left: 0px;
+    background-color: #0088BB;
+}
+
+/* 第二部分卡片 */
+
+/* 卡片置中用 */
+.p2{
+    width: 350px;
+    height: 400px;
+}
+
+/* 圖片 */
+.p_image_2_1{
+    width: 100%;
+    height: 200px;
+    background-image: url(./image/1_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+.p_image_2_2{
+    width: 100%;
+    height: 200px;
+    background-image: url(./image/1_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+.p_image_2_3{
+    width: 100%;
+    height: 200px;
+    background-image: url(./image/RWURKU.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+.p_image_2_4{
+    width: 100%;
+    height: 200px;
+    background-image: url(./image/1_4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}

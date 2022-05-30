@@ -1,0 +1,424 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI',SegoeUI,'Microsoft JhengHei',微軟正黑體,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body,ul,h1,p{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    background-color: #FFF;
+    border: none;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    max-width: calc(1600px + 10%);
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    padding: 8px 5%;
+    font-size: 13px;
+    height: 54px;
+    position: relative;
+}
+
+header .container>img{
+    height: 23px;
+    margin: 0px 30px 0px 10px;
+}
+
+header .container .menu{
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+}
+/* header .container .menu .surface-btn{
+    display: none;
+} */
+header .container .menu li ul .dropdown-surface{
+    display: none;
+}
+header .container .menu li .more{
+    display: none;
+}
+header .container .menu li ul{
+    display: flex;
+}
+header .container .menu >li:not(:last-child){
+    padding: 15px 10px;
+}
+header .container .menu >li ul li{
+    padding: 15px 10px;
+}
+
+header .container .sign-in-menu{
+    display: flex;
+    align-items: center;
+}
+
+header .container .sign-in-menu .hamburger{
+    display: none;
+}
+.tablet-menu{
+    display: none;
+}
+header .container .sign-in-menu li:first-child{
+    position: relative;
+    padding: 15px 6px;
+}
+header .container .sign-in-menu .all-microsoft-dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 1230px;
+    top: 45px;
+    left: -830px;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+}
+header .container .sign-in-menu .all-microsoft-dropdown li{
+    margin: 0!important;
+}
+header .container .sign-in-menu .all-microsoft-dropdown>li:not(:last-child){
+    width: calc(100% / 6);
+}
+header .container .sign-in-menu li:first-child:hover .all-microsoft-dropdown{
+    display: flex;
+}
+
+header .container .sign-in-menu i{
+    margin-left: 10px;
+}
+header .container .sign-in-menu li{
+    margin-left: 30px;
+}
+header .container .sign-in-menu .sign-in-btn{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+header .container .sign-in-menu .sign-in-btn img{
+    width: 32px;
+    margin-left: 10px;
+}
+
+
+@media (max-width:1399px){
+    header .container .sign-in-menu span:not(.all-microsoft){
+        display: none;
+    }
+    header .container .sign-in-menu li{
+        margin-left: 10px;
+    }
+    
+}
+@media (max-width:886px) {
+    header .container .menu li .more{
+        display: block;
+    }
+
+    /* header .container .menu .surface-btn{
+        display: block;
+    } */
+    header .container .menu li ul{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        background-color: #f2f2f2;
+        border: 1px solid #e6e6e6;
+        border-bottom: 1px solid #000;
+        width: 168px;
+
+    }
+    header .container .menu li{
+        position: relative;
+    }
+    header .container .menu li:last-child:hover ul{
+        display: block;
+    }
+    header .container .menu li ul li{
+        padding: 20px 30px;
+    }
+    header .container .menu >li:last-child{
+        padding: 15px 10px;
+    }
+    /* header .container .menu .dropdown-surface{
+        display: none;
+    } */
+    header .container .menu >li:last-child:hover{
+        background-color: #e6e6e6;
+    }
+    header .container .menu ul li:hover{
+        background-color: #e6e6e6;
+    }
+}
+
+@media (max-width:869px) {
+    header .container .menu li ul .dropdown-surface{
+        display: block;
+    }
+    header .container .menu .surface-btn{
+        display: none;
+    }
+    
+}
+@media (max-width:859px) {
+    header .container>img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+    }
+    header .container .menu{
+        display: none;
+    }
+    header .container .sign-in-menu{
+        flex-grow: 1;
+    }
+    header .container .sign-in-menu li:nth-child(2){
+        margin-right: auto;
+    }
+    header .container .sign-in-menu  .all-microsoft{
+        display: none;
+    }
+    header .container .sign-in-menu .hamburger{
+        display: block!important;
+    }
+    header .container .sign-in-menu .all-microsoft-dropdown{
+        /* 不能這樣寫 會出包 */
+        width: calc(100vw - 17px);
+        
+        top: 100%;
+        left: -40px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+}
+
+
+
+
+
+
+/* carousel */
+#carousel{
+    margin-bottom: 80px;
+}
+#carousel .container{
+    position: relative;
+}
+
+#carousel .container picture img{
+    width: 100%;
+}
+#carousel .container .carousel-content{
+    width: 519px;
+    position: absolute;
+    top: 50%;
+    left: calc(5% + 100px);
+    transform: translateY(-50%);
+}
+#carousel .container .carousel-content h1{
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+#carousel .container .carousel-content p{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#carousel .container button{
+    width: 185px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#carousel .container .black-btn{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    margin-right: 20px;
+}
+#carousel .container .white-btn{
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+
+
+#carousel .container button span{
+    transition: .2s;
+}
+#carousel .container button:hover span{
+    margin-right: 5px;
+}
+/* #carousel .container button span{
+    transition: .5s;
+}
+#carousel .container button:hover span{
+    margin-right: 5px;
+} */
+
+.underline-black,.underline-white{
+    position: relative;
+}
+
+.underline-black::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: .5s;
+}
+.underline-white::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: .5s;
+}
+#carousel .container button:hover .underline-black::after,#carousel .container button:hover .underline-white::after{
+    opacity: 1;
+}
+
+/* product */
+#product{
+    margin-bottom: 80px;
+}
+#product .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#product .container .microsoft,#product .container .surface,#product .container .get-window{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 184px;
+}
+
+#product .container p{
+    text-align: center;
+    height: 42px;
+}
+#product .container .microsoft p{
+    width: 125px;
+}
+
+/* 4-cards */
+#four-cards{
+    margin-bottom: 80px;
+}
+#four-cards .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+
+}
+#four-cards .container .row .card{
+    width: 25%;
+    padding: 0 12px;
+}
+#four-cards .container .row .card>img{
+    width: 100%;
+}
+
+/* @media (max-width:1200px) {
+    #four-cards .container .row .card{
+        width: 50%;
+    }
+} */
+
+
+/* microsoft onedrive */
+#one-drive{
+    margin-bottom: 80px;
+}
+#one-drive .container{
+    position: relative;
+}
+
+#one-drive .container img{
+    width: 100%;
+}
+#one-drive .one-drive-content{
+    position: absolute;
+    top: 50%;
+    left: calc(5% + 100px);
+    transform: translateY(-50%);
+}
+
+
+/* 4cards-2 */
+#four-cards-two{
+    margin-bottom: 80px;
+}
+#four-cards-two .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+
+}
+#four-cards-two .container .row .card{
+    width: 25%;
+    padding: 0 12px;
+}
+#four-cards-two .container .row .card>img{
+    width: 100%;
+}
+
+/* social media */
+
+
+footer{
+    background-color: #f2f2f2;
+}
+footer .row{
+    display: flex;
+    margin-bottom: 40px;
+}
+footer .row ul{
+    width: calc(100% / 6);
+}
+footer .copyright{
+    display: flex;
+}
+footer .copyright{
+    display: flex;
+    justify-content: space-between;
+}
+footer .copyright .copyright-list ul{
+    display: flex;
+}

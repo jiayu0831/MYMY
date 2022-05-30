@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+    font-family: 'Noto Serif TC', serif;
+}
+.top1{
+    margin: 20px 20px 10px ;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.main{
+    margin: 20px 0 0 5px;
+    width: 185px;
+    height: 450px;
+    background-color: rgb(53, 74, 105);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.txt{
+    color: #ccd2e4;
+    font-size: 20px;
+    margin: 0 0 50px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    margin: 0 0 20px 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.box_2{
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.box:hover,
+.box_2:hover{
+    transform: scale(1.2);
+    background-color: #7b869e;
+}
+
+.bgcolor{
+    background-color: #33ff88;
+}
+
+.text{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #181e30;
+    margin: 0px 0 0 40px;
+}
+.txt_2{
+    color: #ccd2e4;
+    font-size: 20px;
+}
+.btn{
+    /* border: #010101 solid 1.5px; */
+    width: 500px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0 0 40px;
+    font-size: 20px;
+    background-color: #181e30;
+    color: #ccd2e4;
+    
+}
+
+#num1{
+    background-color: rgb(214, 214, 214);
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 10px 0 0 ;
+    border: 0;
+}
+#num2{
+    background-color: rgb(214, 214, 214);
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+    border: 0;
+}
+
+
+#cala{
+    margin: 0 0 0 20px;
+    font-size: 18px;
+    background-color: rgb(80, 86, 112);
+    color: rgb(214, 214, 214);
+    padding: 5px;
+    border: 0;
+    font-family: 'Noto Serif TC', serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+div.btn h3{
+    margin: 0 10px;
+    font-family: 'Noto Serif TC', serif;
+}
+#cala:hover{
+    background-color: rgb(214, 214, 214);
+    color: rgb(80, 86, 112);
+    transform: scale(1.2);
+}
+
+
+.score{
+    background-color: #ccd2e4;
+    width: 300px;
+    height:450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px 0 20px;
+    color: rgb(80, 86, 112);
+}
+
+.title{
+    font-size: 22px;
+    margin: 15px 0 0 0;
+    font-family: 'Noto Serif TC', serif;
+
+
+}
+.in{
+    width: 250px;
+    height: 30px;
+    margin: 10px 0;
+    background-color: rgb(241, 244, 255);
+    border: 0;
+    font-size: 18px;
+    text-align: center;
+}
+#s_calc{
+    width: 200px;
+    height: 35px;
+    margin: 20px 0 20px ;
+    border: 0;
+    background-color: rgb(80, 86, 112);
+    color: rgb(157, 172, 206);
+    font-size: 16px;
+    font-family: 'Noto Serif TC', serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#s_calc:hover{
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+#s_result{
+    height: 35px;
+    font-size: 20px;
+}

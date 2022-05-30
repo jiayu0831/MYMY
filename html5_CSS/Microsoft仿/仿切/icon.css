@@ -1,0 +1,55 @@
+/* 圖示區塊控制 */
+
+/* 圖示大區塊 */
+.icon{
+    height: 200px;
+    /* width: 1500px; */
+    /* background-color: #555555; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 圖示置中用區塊 */
+.icon1{
+    height: 100px;
+    width: 150px;
+    background-color: #fff;
+    margin: 0 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 窗圖示 */
+.I1{
+    /* background-color: #AAA; */
+    background-image: url(./image/RE4sQDc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+/* 電腦圖示 */
+.I2{
+    /* background-color: #AAA; */
+    background-image: url(./image/RE4pndL.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+/* 文字對齊用設定 */
+.T1{
+    text-align: center;
+    margin: 10px 0 0 ;
+}
+
+/* 文字底線設定 */
+.T1:hover{
+    text-decoration:underline;
+}

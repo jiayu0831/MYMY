@@ -1,0 +1,256 @@
+/* 選單樣式控制 */
+
+
+/* a的統一樣式 */
+a{
+    font-size: 12px;
+    text-decoration:none;
+    color: #555555;
+}
+
+
+/* 主框架 */
+.header{
+    padding: 0 5%;
+}
+
+
+.menu{
+    background-color: #ffffff;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.menu_container{
+    width: 1600px;
+    padding: 0 ;
+}
+
+
+
+/* 左側 */
+.menu1{
+    /* width: 900px; */
+    height: 54px;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* 商標區塊 */
+.logo{
+    width: 150px;
+    height: 54px;
+    /* background-color: #888888; */
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+/* 商標圖/連結 */
+.logo_image{
+    width: 120px;
+    height: 35px;
+    background-image: url(./image/LOGO.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 左選單列 控制ul */
+.menu1_1{
+    /* width: 620px; */
+    height: 100%;
+    /* background-color: #AAAAAA; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* 左方ul的class控制，對齊用 */
+.mage1{
+    /* width: 600px; */
+    height: 100%;
+    /* background-color: rgb(148, 108, 108); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+/* 左方li樣式控制 */
+.m1{
+    width: 80px;
+    height: 100%;
+    background-color: #fff;
+    line-height: 54px;
+    text-align: left;
+}
+
+/* 左方選單底線樣式 */
+.underline{
+    position: relative;
+}
+.underline::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 16px;
+    background-color: rgba(85, 85, 85, 0);
+}
+.underline:hover::after{
+   background-color: rgba(85, 85, 85, 1);
+}
+
+/* 右側 */
+.menu2{
+    /* width: 550px; */
+    height: 54px;
+    /* background-color: #eeeeee; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* 右方ul樣式控制 對齊用 */
+.menu2_1{
+    /* width: 540px; */
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    line-height: 54px;
+    font-size: 14px;
+}
+
+/* 右方選單的li樣式控制 */
+.m2{
+    width: 111px;
+    text-align: end;
+}
+.m2_1{
+    width: 111px;
+    text-align: end;
+}
+
+/* 登入的圖示 */
+svg{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 10px;
+}
+
+/* 右方選單底線樣式 */
+.underline_1{
+    position: relative;
+}
+.underline_1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 16px;
+    background-color: rgba(85, 85, 85, 0);
+    /* opacity: 0.8; */
+}
+.underline_1:hover::after{
+   /* opacity: 0.3;bg */
+   background-color: rgba(85, 85, 85, 1);
+}
+
+
+/* "所有 Microsoft"的點擊清單樣式控制 */
+.overmft{
+    z-index: 10;
+    width: 1150px;
+    height: 500px;
+    background-color: #EEE;
+    position: absolute;
+    top: 55px;
+    left: 280px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+/* 上下區塊 */
+.o_page_1{
+    /* background-color: #666666; */
+    width: 1150px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.o_page_2{
+    background-color: #DDD;
+    width: 1150px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 內部區分用區塊 */
+.o_menu_1{
+    /* background-color: #DDDDDD; */
+    width: calc((1150px / 6) - 2px);
+    height: 450px;
+}
+.o_link{
+    font-weight:bold;
+}
+
+/* 文字樣式 */
+.o_title{
+    margin: 15px 5px 15px;
+    font-size: 14px;
+    font-weight:bold;
+}
+.o_txt{
+    margin: 20px 5px;
+
+}
+
+
+/* 連結文字樣式 */
+.a_color{
+    color: #333;
+    font-size: 14px;
+}
+
+.a_color:hover{
+    border-bottom: #333 2px solid;
+}
+
+
+#manu_control{
+    position: absolute;
+    z-index: -4;
+    opacity: 0;
+}
+
+#manu_control:checked ~ .overmft{
+    opacity: 1;
+}
+

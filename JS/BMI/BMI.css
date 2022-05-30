@@ -1,0 +1,189 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 新細明體;
+  font-size: 20px;
+}
+
+* body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  margin: 2vh 0 0;
+  width: 90vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3.5px dashed #09e9e9;
+}
+
+.container .header {
+  width: 70vw;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header .big_title {
+  font-size: 50px;
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.container .header .text_1, .container .header .text_2 {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 1.5vh;
+  font-family: 微軟正黑體;
+}
+
+.container .header .text_2 {
+  margin: 4vh 0 0;
+}
+
+.container .my_number {
+  width: 100%;
+  height: 18vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .my_number .enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70vw;
+  height: 12vh;
+}
+
+.container .my_number .enter .my {
+  font-weight: 900;
+  margin: 0 0.5vw;
+}
+
+.container .my_number .enter .tT {
+  border: #03c703 dashed 3px;
+  width: 10vw;
+}
+
+.container .my_number .enter .btn {
+  background-color: #00f7ff;
+  height: 40px;
+  margin: 0 0.5vw;
+  border: 0;
+  cursor: pointer;
+  font-weight: 900;
+  color: #00f;
+}
+
+.container .my_number .enter #hight {
+  text-align: center;
+}
+
+.container .my_number .enter #weight {
+  text-align: center;
+}
+
+.container .my_number .enter .result {
+  border: #00f7ff dashed 3px;
+}
+
+.container .my_number .output {
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 6vh 0;
+}
+
+.container .my_number .output .result {
+  width: 30vw;
+  height: 40px;
+  border: #00f7ff dashed 3px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.container .sheet {
+  border: #00f7ff dashed 3px;
+  width: 50vw;
+  height: 31.7vh;
+  font-weight: 900;
+  text-align: center;
+}
+
+.container .sheet tr {
+  height: calc(30vh / 7);
+}
+
+.container .sheet td {
+  border: #00f7ff dashed 3px;
+  width: calc(50vw / 3);
+}
+
+.container .sheet .ttd {
+  border: #00f7ff dashed 3px;
+  height: calc(30vh / 7);
+  width: 49.2vw;
+  position: absolute;
+  top: 45.7%;
+  left: 25.4%;
+}
+/*# sourceMappingURL=BMI.css.map */

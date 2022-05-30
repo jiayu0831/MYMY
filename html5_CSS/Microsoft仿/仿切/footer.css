@@ -1,0 +1,118 @@
+/* 頁尾區塊樣式控制 */
+
+/* 網站地圖頁尾 */
+.foot1{
+    height: 400px;
+    width: 100%;
+    background-color: #CCCCCC;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 內區塊 */
+.foot_page{
+    width: 1500px;
+    height: 400px;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 每項區分區塊對齊用 */
+.footer{
+    /* background-color: #AAAAAA; */
+    width: calc((100% / 6) - 5px);
+    height: 400px;
+}
+
+/* 分類副標 */
+.f_title{
+    color: #555555;
+    font-size: 16px;
+    margin: 20px 0 0;
+    font-weight:bold;
+}
+
+/* 細項連結 */
+.f_txt{
+    color: #000000;
+    font-size: 20px;
+    margin: 5px 0 0;
+}
+
+/* 連結底線設定 */
+.f_txt:hover{
+    text-decoration: underline;
+}
+
+
+/* 雜項頁尾 */
+.foot2{
+    height: 60px;
+    width: 100%;
+    background-color: #CCCCCC;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 置中對齊用區塊 */
+.f_page_2{
+    width: 1500px;
+    height: 60px;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/* 左方區塊 */
+.TW{
+    width: 150px;
+    height: 60px;
+    /* background-color: #AAAAAA; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* 右方區塊 */
+.foot_menu{
+    height: 60px;
+    width: 500px;
+    /* background-color: #CCCCCC; */
+    display: flex;
+    align-items: center;
+}
+
+/* 右方連結 */
+.f_menu{
+    width: 400px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+/* 更新年分 */
+.age{
+    /* background-color: #CCC; */
+    font-size: 12px;
+    color: #333333;
+}
+
+/* 頁尾連結底線 */
+.f_m_link:hover,
+.TW_txt:hover{
+    text-decoration: underline;
+}
+

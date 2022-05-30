@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_bmi</title>
+    <link rel="stylesheet" href="./BMI.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <div class="big_title">BMI 計算機</div>
+            <div class="text_1">身體指數(Body Mass Index，簡稱BMI)是公認用來估計肥胖程度方法</div>
+            <div class="text_2">BMI=體重(公斤)/身高的平方(公尺)</div>
+        </div>
+        <div class="my_number">
+            <div class="enter">
+                <div class="my my_h">我的身高 ：</div>
+                <input id="hight" class="tT" type="number">
+                <div class="my cm">公分</div>
+
+                <div class="my my_w">我的體重 ：</div>
+                <input id="weight" class="tT" type="number">
+                <div class="my kg">公斤</div>
+
+                <button class="btn" id="count">計算</button>
+                <button class="btn" id="clear">重新填寫</button>
+            </div>
+            <div class="output">
+              <div class="result">　</div>
+            </div>
+        </div>
+        <div class="sheet">
+            <table>
+                <thead>
+                  <tr class="ttr">
+                    <div class="ttd">
+                      <th colspan="3">BMI值</th>
+                    </div>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="ttr">
+                    <td></td>
+                    <td>男性</td>
+                    <td>女性</td>
+                  </tr>
+                  <tr class="ttr">
+                    <td>體重過輕</td>
+                    <td>&lt;20<br></td>
+                    <td>&lt;19</td>
+                  </tr>
+                  <tr class="ttr">
+                    <td>正常範圍</td>
+                    <td>20-25</td>
+                    <td>19-25</td>
+                  </tr>
+                  <tr class="ttr">
+                    <td>體重過重</td>
+                    <td>25-30</td>
+                    <td>25-30</td>
+                  </tr>
+                  <tr class="ttr">
+                    <td>肥胖</td>
+                    <td>30-40</td>
+                    <td>30-40</td>
+                  </tr>
+                  <tr class="ttr">
+                    <td>病態肥胖</td>
+                    <td>&gt;40</td>
+                    <td>&gt;40</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="./BMI.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI',SegoeUI,'Microsoft JhengHei',微軟正黑體,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body,ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+.index{
+    margin: 0;
+    padding: 0;
+    padding: 0 10%;
+    margin: 0 auto;
+}
+
+/* 導覽列 */
+/* .header{
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+
+}
+
+nav{
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.menu_left{
+    width: calc((100% / 2) - 10px);
+    height: 100%;
+    /* background-color: #EEEEEE; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    /* background-color: #fff; */
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+.logo_image{
+    /* background-color: #AA14; */
+    background-image: url(../image/LOGO.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 120px;
+    height: 100%;
+}
+
+.left_ul,.right_ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.left_li,.right_li{
+    font-size: 14px;
+    margin: 0 1vw 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.li_icon_2{
+    margin: 0 0 0 0.5vw;
+}
+
+.li_icon_2_svg{
+    width: 1.5vw;
+    margin: 0 0 0 0.5vw;
+    padding: 0;
+}
+
+/* 內整體 */
+.container{
+    overflow: hidden;
+    max-width:1600px;
+    background-color: #aaaaaa;
+}
+
+
+/* 圖文 */
+.photo_1{
+    /* background-color: #eee; */
+    background-image: url(../image/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 27vh 5vw;
+    cursor: pointer;
+}
+.photo_2{
+    background-image: url(../image/RE3hFDE.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #eee;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 5vw;
+    cursor: pointer;
+}
+.photo_new{
+    background-color: #fecf00;
+    width: 4vw;
+    height: 4vh;
+    line-height: 4vh;
+    padding: 0 0 0 0.7vw;
+    font-size: 0.8vw;
+    font-weight:bold;
+}
+.photo_txt{
+    font-size: 0.8vw;
+}
+.photo_button{
+    background-color: #000;
+    color: #FFF;
+    font-size: 0.8vw;
+    font-weight:bold;
+    width: 7.5vw;
+    height: 3.5vh;
+    line-height: 3.5vh;
+    padding: 0 0 0 1.5vw;
+    margin: 2.5vh 0 0 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;   
+}
+
+/* 圖示連結 */
+.image{
+    background-color: #EEE;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.image_page{
+    background-color: #fff;
+    height: 30vh;
+    width: 15vw;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image_icon_windows{
+    /* background-color: #AAA; */
+    background-image: url(../image/RE4sQDc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3vw;
+    height: 7vh;
+}
+.image_icon_computer{
+    background-image: url(../image/RE4pndL.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: #AAA; */
+    width: 3vw;
+    height: 7vh;
+}
+
+.footer{
+    background-color: #CCCCCC;
+} */

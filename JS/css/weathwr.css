@@ -1,0 +1,265 @@
+@charset "UTF-8";
+:root {
+  --color-gold: #61aa79;
+}
+
+* {
+  font-family: 微軟正黑體;
+  margin: 0;
+  padding: 0;
+}
+
+* body {
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* body #app {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: -10px;
+    left: -5px;
+  }
+  25% {
+    top: -15px;
+    left: -25px;
+  }
+  50% {
+    top: 5px;
+    left: -30px;
+  }
+  75% {
+    top: 20px;
+    left: -17px;
+  }
+  80% {
+    top: 15px;
+    left: -10px;
+  }
+  90% {
+    top: 0px;
+    left: 2px;
+  }
+  100% {
+    top: -10px;
+    left: -5px;
+  }
+}
+
+@keyframes move {
+  0% {
+    top: -10px;
+    left: -5px;
+  }
+  25% {
+    top: -15px;
+    left: -25px;
+  }
+  50% {
+    top: 5px;
+    left: -30px;
+  }
+  75% {
+    top: 20px;
+    left: -17px;
+  }
+  80% {
+    top: 15px;
+    left: -10px;
+  }
+  90% {
+    top: 0px;
+    left: 2px;
+  }
+  100% {
+    top: -10px;
+    left: -5px;
+  }
+}
+
+* body #app svg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  -webkit-animation: infinite move 18s;
+          animation: infinite move 18s;
+}
+
+* body #app svg path {
+  stroke: #6ccc8c;
+  fill: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+* body #app svg path:hover {
+  fill: var(--color-gold);
+  -webkit-transform: translate(0px, -7px);
+          transform: translate(0px, -7px);
+}
+
+@-webkit-keyframes move_2 {
+  0% {
+    color: #6ccc8c;
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    color: #89b798;
+    top: -15px;
+    left: 5px;
+  }
+  50% {
+    color: #d6ebdd;
+    top: -8px;
+    left: 25px;
+  }
+  75% {
+    color: #99d4ad;
+    top: -2px;
+    left: 18px;
+  }
+  100% {
+    color: #6ccc8c;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@keyframes move_2 {
+  0% {
+    color: #6ccc8c;
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    color: #89b798;
+    top: -15px;
+    left: 5px;
+  }
+  50% {
+    color: #d6ebdd;
+    top: -8px;
+    left: 25px;
+  }
+  75% {
+    color: #99d4ad;
+    top: -2px;
+    left: 18px;
+  }
+  100% {
+    color: #6ccc8c;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+* body #app .title_area {
+  position: relative;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin: -20vh 10vw 0 0;
+  color: #9fe9b8;
+  font-size: 26px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: infinite move_2 10s;
+          animation: infinite move_2 10s;
+}
+
+@-webkit-keyframes move_3 {
+  0% {
+    text-shadow: #ecffe49a 0.5px 0.5px 8px;
+  }
+  25% {
+    text-shadow: #ecffe494 1px 1px 10px;
+  }
+  50% {
+    text-shadow: #ecffe4 2px 2px 12px;
+  }
+  75% {
+    text-shadow: #ecffe49a 1px 1px 10px;
+  }
+  100% {
+    text-shadow: #ecffe4 0.5px 0.5px 10px;
+  }
+}
+
+@keyframes move_3 {
+  0% {
+    text-shadow: #ecffe49a 0.5px 0.5px 8px;
+  }
+  25% {
+    text-shadow: #ecffe494 1px 1px 10px;
+  }
+  50% {
+    text-shadow: #ecffe4 2px 2px 12px;
+  }
+  75% {
+    text-shadow: #ecffe49a 1px 1px 10px;
+  }
+  100% {
+    text-shadow: #ecffe4 0.5px 0.5px 10px;
+  }
+}
+
+* body #app .title_area h1 {
+  font-size: 40px;
+  font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: infinite move_3 5s;
+          animation: infinite move_3 5s;
+  text-shadow: #ecffe49a 1px 1px 10px;
+}
+
+* body #app .title_area hr {
+  width: 400px;
+  margin: 2vh;
+  margin-left: 0;
+  border-bottom: solid 1px #9fe9b8;
+}
+
+* body #app .title_area .card-region {
+  color: #cadfd1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+* body #app .title_area .card-region .single_card {
+  display: none;
+  margin: 0 0 -20vh 0;
+}
+
+* body #app .title_area .card-region .single_card:hover {
+  text-shadow: #9fb9e9 1px 1px 10px;
+}
+
+* body canvas {
+  display: block;
+  background: black;
+}
+/*# sourceMappingURL=weathwr.css.map */

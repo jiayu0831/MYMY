@@ -1,0 +1,15 @@
+.m22::before{
+    content:  '';
+    background-color: #000;
+    height: 2px;
+    width: 70%;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    opacity: 0;
+}
+
+.m22:hover:before{
+    opacity: 1;
+}
+

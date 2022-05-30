@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamburger_menu</title>
+</head>
+
+<style>
+    /* reset */
+body, h1, ul, li {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none; 
+  padding-left: 0; 
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 隱藏 checkbox */
+input {
+  display: none;
+}
+
+/* 漢堡按鈕 */
+label {
+    height: 60px;
+    width: 60px;
+    color: black;
+    background: #999999;
+}
+
+/* menu*/
+.menu {
+  clear: both;
+  background: #fff;
+  }
+li {
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    }
+a {
+      display: block;
+      line-height: 50px;
+      font-size: 18px;
+      color: #5d5d5d;
+      }
+
+/* 下拉選單效果 */
+.menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: .2s; /* 動畫秒數 */
+}
+
+input:checked ~ .menu {
+  max-height: 300px;
+}
+
+/* mediaquery */
+@media screen and (min-width: 768px) {
+  label {
+    display: none;
+  }
+  .menu {
+    float: right;
+    clear: none;
+    max-height: 50px;
+    background: #eee;
+  }
+}
+</style>
+
+<body>
+
+    <nav>
+        <label for="switch"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="switch">
+        <ul class="menu">
+            <li><a href="##">首頁
+            </a></li>
+            <li><a href="##">鬆獅蜥</a></li>
+            <li><a href="##">守宮</a></li>
+            <li><a href="##">玉米蛇</a></li>>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

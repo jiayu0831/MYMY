@@ -1,0 +1,135 @@
+/* 圖文樣式控制 */
+
+
+/* 第一部分圖文控制區塊 */
+.image1{
+    height: 598px;
+    /* width: 1600px; */
+    overflow: hidden;
+    background-image: url(./image/RW.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 大標 */
+.title_1{
+    color: #FFFFFF;
+    padding-top: 0;
+    margin-top: -3px;
+    margin: 0.67em 100px;
+    /* 網頁已做H1格式 */
+}
+/* 內文 */
+.txt_1{
+    color: #FFFFFF;
+    font-size: 15px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 100px;
+}
+/* 圖文連結 */
+.txtBottom_1{
+    margin: 3em 100px;
+    height: 40px;
+    width: 240px;
+    background-color: #fff;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+    /* 網頁已做h3格式 */
+}
+
+
+/* 第二部分圖文控制區塊 */
+.image2{
+    height: 598px;
+    /* width: 1500px; */
+    overflow: hidden;
+    background-image: url(./image/RE3hFDE.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 大標 */
+.title_2{
+    color: #000;
+    padding-top: 0;
+    margin-top: -3px;
+    margin: 0.67em 100px;
+    /* 網頁已做H1格式 */
+}
+/* 內文 */
+.txt_2{
+    color: #000;
+    font-size: 15px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 100px;
+}
+/* 圖文連結 */
+.txtBottom_2{
+    margin: 20px 100px;
+    height: 40px;
+    width: 150px;
+    background-color: #000;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    /* 網頁已做h3格式 */
+}
+
+/* 第一圖文連結底線 */
+.txtBottom_1_underline{
+    position: relative;
+}
+.txtBottom_1_underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 175px;
+    left: -20px;
+    bottom: 0;
+    top: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.txtBottom_1_underline:hover:after{
+    background-color: #000;
+    left: 25px;
+    bottom: 0;
+    top: 30px;
+}
+
+/* 第二圖文連結底線 */
+.txtBottom_2_underline{
+    position: relative;
+}
+.txtBottom_2_underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 85px;
+    left: -15px;
+    bottom: 0;
+    top: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.3s;
+}
+.txtBottom_2_underline:hover:after{
+    background-color: rgb(255, 255, 255);
+    left: 25px;
+    bottom: 0;
+    top: 30px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI_2.0</title>
+    <link rel="stylesheet" href="./bmi_2.0.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="heard">
+            <div class="bigTitle">
+                BMI 計算機
+            </div>
+            <div class="txt bigText1">
+                身體指數<br>(Body Mass Index，簡稱BMI)<br>是公認用來估計肥胖程度方法
+            </div>
+            <div class="txt bigText2">
+                BMI=體重(公斤)/身高的平方(公尺)
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="main">
+                <div class="myNumber">
+                    <div class="ht">
+                        <div class="my">
+                            我的身高：
+                        </div>
+                        <input id="hight" class="Tt" type="number">
+                        <div class="my">
+                            公分
+                        </div>
+                    </div>
+
+                    <div class="wt">
+                        <div class="my">
+                            我的體重：
+                        </div>
+                        <input id="weight" class="Tt" type="number">
+                        <div class="my">
+                            公斤
+                        </div>
+                    </div>
+            
+                    <div class="bbtn">
+                        <button class="btn" id="count">計算</button>
+                        <button class="btn" id="clear">重新填寫</button>
+                    </div>
+                </div>
+                <div class="output">
+                    <div class="result">**結果在這裡顯示**</div>
+                </div>
+            </div>
+            <div class="sheet">
+                <table>
+                    <thead>
+                      <tr class="ttr">
+                        <div class="ttd">
+                          <th colspan="3">BMI值</th>
+                        </div>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="ttr">
+                        <td></td>
+                        <td>男性</td>
+                        <td>女性</td>
+                      </tr>
+                      <tr class="ttr">
+                        <td>體重過輕</td>
+                        <td>&lt;20<br></td>
+                        <td>&lt;19</td>
+                      </tr>
+                      <tr class="ttr">
+                        <td>正常範圍</td>
+                        <td>20-25</td>
+                        <td>19-25</td>
+                      </tr>
+                      <tr class="ttr">
+                        <td>體重過重</td>
+                        <td>25-30</td>
+                        <td>25-30</td>
+                      </tr>
+                      <tr class="ttr">
+                        <td>肥胖</td>
+                        <td>30-40</td>
+                        <td>30-40</td>
+                      </tr>
+                      <tr class="ttr">
+                        <td>病態肥胖</td>
+                        <td>&gt;40</td>
+                        <td>&gt;40</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <Script src="./BMI_2.0.js"></Script>
+</body>
+</html>
