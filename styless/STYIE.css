@@ -122,8 +122,8 @@
 }
 
 .C_fluid .nav .LOGO {
-  width: 120px;
-  height: 60px;
+  width: 180px;
+  height: 90px;
   border: #000000 2px solid;
   background-image: url(../IMG_0806.GIF);
   background-repeat: no-repeat;
@@ -138,7 +138,7 @@
 }
 
 .C_fluid .nav .nav-link {
-  margin: 0 1vw;
+  margin: 1vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -146,6 +146,10 @@
 .C_fluid .nav .nav-link:hover {
   font-size: 18px;
   font-weight: 600;
+}
+
+.C_fluid .nav .ri {
+  margin: 1vw;
 }
 
 .C_fluid .banner {
@@ -198,12 +202,12 @@
 }
 
 .C_fluid .banner .MyTop .DD .MyPhoto {
-  background-image: url(../LOGO/全彩.PNG);
+  background-image: url(../嘉毓.png);
   background-color: #fff;
   width: 250px;
   height: 250px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin-bottom: 5vh;
   border: #5d7968 5px solid;
   margin: 0 2vw;
@@ -308,13 +312,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #5d7968;
-  height: 600px;
   width: 100vw;
+  padding: 10vw;
 }
 
 .C_fluid .banner .Myicon .AA {
@@ -342,12 +342,12 @@
 }
 
 .C_fluid .banner .Myicon .tt {
-  opacity: 0;
-}
-
-.C_fluid .banner .Myicon .tt:hover {
-  opacity: 0;
-  color: #FFF;
+  opacity: 1;
+  width: 100px;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  top: 100px;
 }
 
 .C_fluid .banner .Myicon .ttt {
@@ -355,6 +355,62 @@
   color: #fff;
   font-weight: 900;
   margin-right: 2vw;
+  display: none;
+}
+
+.C_fluid .banner .Myicon .ttt1 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 900;
+  margin-left: 2.5vw;
+  display: none;
+}
+
+.C_fluid .banner .Myicon .to1 {
+  background-image: url(../DIS.PNG);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 10px;
+  margin-right: 4vw;
+}
+
+.C_fluid .banner .Myicon .to3 {
+  background-image: url(../CODE.PNG);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 10px;
+  margin-right: 4vw;
+}
+
+.C_fluid .banner .Myicon .to2 {
+  background-image: url(../OFF.PNG);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 10px;
+  margin-left: 4vw;
+}
+
+.C_fluid .banner .Myicon .ITP,
+.C_fluid .banner .Myicon .IBT {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .C_fluid .banner .Myicon .ICONN {
@@ -365,9 +421,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -375,7 +431,7 @@
 }
 
 .C_fluid .banner .Myicon .ICONN .DS {
-  margin: 3vh 0;
+  margin: 5vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,12 +455,23 @@
   transition: 0.3s;
 }
 
-.C_fluid .banner .Myicon .ICONN .DS .IcoMG:hover {
-  width: 100px;
-  height: 100px;
+.C_fluid .banner .Myicon .ICONN .DS .IC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.C_fluid .banner .Myicon .ICONN .DS .PS {
+.C_fluid .banner .Myicon .ICONN .DS .IC .PS {
   width: 80px;
   height: 80px;
   background-image: url(../icon/PS.PNG);
@@ -412,7 +479,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .DS .AI {
+.C_fluid .banner .Myicon .ICONN .DS .IC .AI {
   width: 80px;
   height: 80px;
   background-image: url(../icon/AI.PNG);
@@ -420,7 +487,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .DS .PRO {
+.C_fluid .banner .Myicon .ICONN .DS .IC .PRO {
   width: 80px;
   height: 80px;
   background-image: url(../icon/PRO.PNG);
@@ -428,7 +495,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .DS .AF {
+.C_fluid .banner .Myicon .ICONN .DS .IC .AF {
   width: 80px;
   height: 80px;
   background-image: url(../icon/FR.PNG);
@@ -436,8 +503,25 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .WD {
-  margin: 3vh 0;
+.C_fluid .banner .Myicon .ICONN .DS .T5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -5vh 1vw;
+}
+
+.C_fluid .banner .Myicon .WD {
+  margin: 10vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,7 +537,7 @@
           justify-content: center;
 }
 
-.C_fluid .banner .Myicon .ICONN .WD .IcoMG {
+.C_fluid .banner .Myicon .WD .IcoMG {
   -webkit-animation: infinite linear MOV1 5s;
           animation: infinite linear MOV1 5s;
   margin: 0 1vw;
@@ -461,12 +545,23 @@
   transition: 0.3s;
 }
 
-.C_fluid .banner .Myicon .ICONN .WD .IcoMG:hover {
-  width: 100px;
-  height: 100px;
+.C_fluid .banner .Myicon .WD .IC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.C_fluid .banner .Myicon .ICONN .WD .WO {
+.C_fluid .banner .Myicon .WD .IC .WO {
   width: 80px;
   height: 80px;
   background-image: url(../icon/WO.PNG);
@@ -474,7 +569,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .WD .EX {
+.C_fluid .banner .Myicon .WD .IC .EX {
   width: 80px;
   height: 80px;
   background-image: url(../icon/EX.PNG);
@@ -482,7 +577,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .WD .PP {
+.C_fluid .banner .Myicon .WD .IC .PP {
   width: 80px;
   height: 80px;
   background-image: url(../icon/PP.PNG);
@@ -490,8 +585,25 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .CD {
-  margin: 3vh 0;
+.C_fluid .banner .Myicon .WD .T5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -5vh 1vw;
+}
+
+.C_fluid .banner .Myicon .CD {
+  margin: 5vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,7 +619,7 @@
           justify-content: center;
 }
 
-.C_fluid .banner .Myicon .ICONN .CD .IcoMG {
+.C_fluid .banner .Myicon .CD .IcoMG {
   -webkit-animation: infinite linear MOV1 5s;
           animation: infinite linear MOV1 5s;
   margin: 0 1vw;
@@ -515,12 +627,40 @@
   transition: 0.3s;
 }
 
-.C_fluid .banner .Myicon .ICONN .CD .IcoMG:hover {
-  width: 100px;
-  height: 100px;
+.C_fluid .banner .Myicon .CD .T5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -5vh 1vw;
 }
 
-.C_fluid .banner .Myicon .ICONN .CD .HT {
+.C_fluid .banner .Myicon .CD .IC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.C_fluid .banner .Myicon .CD .IC .HT {
   width: 80px;
   height: 80px;
   background-image: url(../icon/HT5.PNG);
@@ -528,7 +668,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .CD .CS {
+.C_fluid .banner .Myicon .CD .IC .CS {
   width: 80px;
   height: 80px;
   background-image: url(../icon/CS.PNG);
@@ -536,7 +676,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .Myicon .ICONN .CD .SCS {
+.C_fluid .banner .Myicon .CD .IC .SCS {
   width: 80px;
   height: 80px;
   background-image: url(../icon/SCS.PNG);
@@ -544,7 +684,7 @@
   background-size: contain;
 }
 
-.C_fluid .banner .MyLink {
+.C_fluid .MyLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -568,17 +708,17 @@
   width: 100vw;
 }
 
-.C_fluid .banner .MyLink .WW {
-  background-color: #ffffffAA;
+.C_fluid .MyLink .WW {
+  background-color: #ffffffDD;
   padding-top: 6vh;
   width: 100vw;
 }
 
-.C_fluid .banner .MyLink .WW p {
+.C_fluid .MyLink .WW p {
   text-align: center;
 }
 
-.C_fluid .banner .MyLink .WW .QQ {
+.C_fluid .MyLink .WW .QQ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,7 +735,7 @@
   position: relative;
 }
 
-.C_fluid .banner .MyLink .WW .QQ::before {
+.C_fluid .MyLink .WW .QQ::before {
   content: '';
   background-color: #163a25;
   position: absolute;
@@ -604,7 +744,7 @@
   top: -1vh;
 }
 
-.C_fluid .banner .MyLink .WW a {
+.C_fluid .MyLink .WW a {
   font-size: 50px;
   color: #163a25;
   margin: 0 2vw;
@@ -614,15 +754,199 @@
           animation: infinite linear MOV3 2s;
 }
 
-.C_fluid .banner .MyLink .WW a:hover {
+.C_fluid .MyLink .WW a:hover {
   color: #a2bead;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
 
-.C_fluid .mainer {
+@-webkit-keyframes MMOV {
+  0% {
+    left: 5vh;
+    top: 0vh;
+  }
+  25% {
+    left: 10vh;
+    top: -5vh;
+  }
+  50% {
+    left: -10vh;
+    top: 0vh;
+  }
+  75% {
+    left: -5vh;
+    top: -5vh;
+  }
+  100% {
+    left: 5vh;
+    top: 0vh;
+  }
+}
+
+@keyframes MMOV {
+  0% {
+    left: 5vh;
+    top: 0vh;
+  }
+  25% {
+    left: 10vh;
+    top: -5vh;
+  }
+  50% {
+    left: -10vh;
+    top: 0vh;
+  }
+  75% {
+    left: -5vh;
+    top: -5vh;
+  }
+  100% {
+    left: 5vh;
+    top: 0vh;
+  }
+}
+
+@-webkit-keyframes MMOV2 {
+  0% {
+    left: 10vh;
+    top: 0vh;
+  }
+  25% {
+    left: 20vh;
+    top: -5vh;
+  }
+  50% {
+    left: 35vh;
+    top: -10vh;
+  }
+  75% {
+    left: 10vh;
+    top: -5vh;
+  }
+  100% {
+    left: 10vh;
+    top: 0vh;
+  }
+}
+
+@keyframes MMOV2 {
+  0% {
+    left: 10vh;
+    top: 0vh;
+  }
+  25% {
+    left: 20vh;
+    top: -5vh;
+  }
+  50% {
+    left: 35vh;
+    top: -10vh;
+  }
+  75% {
+    left: 10vh;
+    top: -5vh;
+  }
+  100% {
+    left: 10vh;
+    top: 0vh;
+  }
+}
+
+@-webkit-keyframes MMOV3 {
+  0% {
+    left: 00vh;
+    top: -5vh;
+  }
+  25% {
+    left: -35vh;
+    top: -15vh;
+  }
+  50% {
+    left: 2vh;
+    top: -20vh;
+  }
+  75% {
+    left: -30vh;
+    top: -5vh;
+  }
+  100% {
+    left: 0vh;
+    top: -5vh;
+  }
+}
+
+@keyframes MMOV3 {
+  0% {
+    left: 00vh;
+    top: -5vh;
+  }
+  25% {
+    left: -35vh;
+    top: -15vh;
+  }
+  50% {
+    left: 2vh;
+    top: -20vh;
+  }
+  75% {
+    left: -30vh;
+    top: -5vh;
+  }
+  100% {
+    left: 0vh;
+    top: -5vh;
+  }
+}
+
+@-webkit-keyframes MMOV4 {
+  0% {
+    left: 00vh;
+    top: -5vh;
+  }
+  25% {
+    left: -10vh;
+    top: -10vh;
+  }
+  50% {
+    left: 30vh;
+    top: -20vh;
+  }
+  75% {
+    left: 20vh;
+    top: -15vh;
+  }
+  100% {
+    left: 0vh;
+    top: -5vh;
+  }
+}
+
+@keyframes MMOV4 {
+  0% {
+    left: 00vh;
+    top: -5vh;
+  }
+  25% {
+    left: -10vh;
+    top: -10vh;
+  }
+  50% {
+    left: 30vh;
+    top: -20vh;
+  }
+  75% {
+    left: 20vh;
+    top: -15vh;
+  }
+  100% {
+    left: 0vh;
+    top: -5vh;
+  }
+}
+
+.mainer {
   background-color: #3a4d41;
-  background-image: url(../BBG.jpg);
+  background-image: url(../DDS.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -633,19 +957,19 @@
   padding: 10vh 0 15vh;
 }
 
-.C_fluid .mainer .TITLE {
+.mainer .TITLE {
   text-align: center;
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 2vh;
 }
 
-.C_fluid .mainer .TEXT {
+.mainer .TEXT {
   text-align: center;
   margin-bottom: 5vh;
 }
 
-.C_fluid .mainer .MM {
+.mainer .MM {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -661,7 +985,7 @@
           justify-content: center;
 }
 
-.C_fluid .mainer .MM .TP {
+.mainer .MM .TP {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -678,19 +1002,23 @@
   margin: 5px;
 }
 
-.C_fluid .mainer .MM .TP a {
+.mainer .MM .TP a {
   text-decoration: none;
 }
 
-.C_fluid .mainer .MM .TP a:hover {
+.mainer .MM .TP a:hover {
   text-decoration: none;
 }
 
-.C_fluid .mainer .MM .TP a .planning {
+.mainer .MM .TP a .planning {
+  position: relative;
+  -webkit-animation: infinite linear MMOV 30s;
+          animation: infinite linear MMOV 30s;
+  border-radius: 50%;
   width: 200px;
-  height: 150px;
+  height: 200px;
   background-color: #ffffff99;
-  line-height: 150px;
+  line-height: 200px;
   text-align: center;
   font-size: 36px;
   font-weight: 600;
@@ -701,22 +1029,30 @@
   text-decoration: none;
 }
 
-.C_fluid .mainer .MM .TP a .planning:hover {
-  background-image: url(../122653.png);
+.mainer .MM .TP a .planning:hover {
+  border-radius: 0%;
+  background-image: url(../WK.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
   text-shadow: black 0px 0px 10px;
-  width: 220px;
+  width: 320px;
   height: 170px;
+  line-height: 170px;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
-.C_fluid .mainer .MM .TP a .design {
+.mainer .MM .TP a .design {
+  position: relative;
+  -webkit-animation: infinite linear MMOV2 20s;
+          animation: infinite linear MMOV2 20s;
+  border-radius: 50%;
   background-color: #ffffff99;
-  width: 400px;
-  height: 150px;
-  line-height: 150px;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
   text-align: center;
   font-size: 36px;
   font-weight: 600;
@@ -725,8 +1061,9 @@
   transition: 0.3s;
 }
 
-.C_fluid .mainer .MM .TP a .design:hover {
-  background-image: url(../122653.png);
+.mainer .MM .TP a .design:hover {
+  border-radius: 0%;
+  background-image: url(../DISS.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -734,9 +1071,12 @@
   text-shadow: black 0px 0px 10px;
   width: 420px;
   height: 170px;
+  line-height: 170px;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
-.C_fluid .mainer .MM .BT {
+.mainer .MM .BT {
   margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,20 +1093,24 @@
           justify-content: center;
 }
 
-.C_fluid .mainer .MM .BT a {
+.mainer .MM .BT a {
   text-decoration: none;
 }
 
-.C_fluid .mainer .MM .BT a:hover {
+.mainer .MM .BT a:hover {
   text-decoration: none;
 }
 
-.C_fluid .mainer .MM .BT a .code {
+.mainer .MM .BT a .code {
+  position: relative;
+  -webkit-animation: infinite linear MMOV3 40s;
+          animation: infinite linear MMOV3 40s;
+  border-radius: 50%;
   background-color: #ffffff99;
   margin: 0 10px;
-  width: 300px;
-  height: 150px;
-  line-height: 150px;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
   text-align: center;
   font-size: 36px;
   font-weight: 600;
@@ -777,8 +1121,9 @@
   transition: 0.3s;
 }
 
-.C_fluid .mainer .MM .BT a .code:hover {
-  background-image: url(../122653.png);
+.mainer .MM .BT a .code:hover {
+  border-radius: 0%;
+  background-image: url(../COD.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -786,13 +1131,20 @@
   text-shadow: black 0px 0px 10px;
   width: 320px;
   height: 170px;
+  line-height: 170px;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
-.C_fluid .mainer .MM .BT a .Project {
+.mainer .MM .BT a .Project {
+  position: relative;
+  -webkit-animation: infinite linear MMOV4 30s;
+          animation: infinite linear MMOV4 30s;
+  border-radius: 50%;
   background-color: #ffffff99;
-  width: 300px;
-  height: 150px;
-  line-height: 150px;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
   text-align: center;
   font-size: 36px;
   font-weight: 600;
@@ -801,8 +1153,9 @@
   transition: 0.3s;
 }
 
-.C_fluid .mainer .MM .BT a .Project:hover {
-  background-image: url(../122653.png);
+.mainer .MM .BT a .Project:hover {
+  border-radius: 0%;
+  background-image: url(../PR.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -810,9 +1163,12 @@
   text-shadow: black 0px 0px 10px;
   width: 320px;
   height: 170px;
+  line-height: 170px;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
-.C_fluid .foot {
+.foot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,15 +1181,15 @@
           align-items: center;
 }
 
-.C_fluid .foot .text {
+.foot .text {
   padding: 10vh 0 5vh;
   font-size: 18px;
   text-align: center;
   font-weight: 600;
 }
 
-.C_fluid .foot .age {
-  background-color: #163a25;
+.foot .age {
+  background-color: #0b130e;
   width: 100vw;
   color: #b6e2c5;
   font-size: 12px;

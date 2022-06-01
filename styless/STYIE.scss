@@ -53,8 +53,8 @@
     .nav{
         padding: 0 10vw;
         .LOGO{
-            width: 120px;
-            height: 60px;
+            width: 180px;
+            height: 90px;
             // background-color: #5665;
             border: #000000 2px solid;
             background-image: url(../IMG_0806.GIF);
@@ -66,12 +66,15 @@
             }
         }
         .nav-link{
-            margin: 0 1vw;
+            margin:1vw;
             transition: 0.3s;
             &:hover{
                 font-size: 18px;
                 font-weight: 600;
             }
+        }
+        .ri{
+            margin: 1vw;
         }
     }
 
@@ -97,12 +100,13 @@
                 background-attachment: fixed;
                 width: 100vw;
                 .MyPhoto{
-                    background-image: url(../LOGO/全彩.PNG);
+                    background-image: url(../嘉毓.png);
+                    
                     background-color: #fff;
                     width: 250px;
                     height: 250px;
                     background-repeat: no-repeat;
-                    background-size: contain;
+                    background-size: cover;
                     margin-bottom: 5vh;
                     border: #5d7968 5px solid;
                     margin: 0 2vw;
@@ -185,6 +189,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            background-color: #5d7968;
+            width: 100vw;
+            padding: 10vw;
             .AA{
                 font-size: 36px;
                 color: #FFF;
@@ -208,35 +215,71 @@
                 animation: infinite linear MOV2 3s;
             }
             .tt{
-                opacity: 0;
-                
-                &:hover{
-                    opacity: 0;
-                    color: #FFF;
-                }
+                opacity: 1;
+                width: 100px;
+                color: #fff;
+                position: relative;
+                text-align: center;
+                top: 100px;
             }
             .ttt{
                 font-size: 20px;
                 color: #fff;
                 font-weight: 900;
                 margin-right: 2vw;
+                display: none;
             }
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #5d7968;
-            height: 600px;
-            width: 100vw;
+            .ttt1{
+                font-size: 20px;
+                color: #fff;
+                font-weight: 900;
+                margin-left: 2.5vw;
+                display: none;
+            }
+            .to1{
+                background-image: url(../DIS.PNG);
+                width: 300px;
+                height: 300px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 10px;
+                margin-right: 4vw;
+            }
+            .to3{
+                background-image: url(../CODE.PNG);
+                width: 300px;
+                height: 300px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 10px;
+                margin-right: 4vw;
+            }
+            .to2{
+                background-image: url(../OFF.PNG);
+                width: 300px;
+                height: 300px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-bottom: 10px;
+                margin-left: 4vw;
+            }
+            .ITP,
+            .IBT{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
             .ICONN{
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 justify-content: center;
                 margin-bottom: 2vh;
                 
                 .DS{
-                    margin: 3vh 0;
+                    margin: 5vh 0;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -245,95 +288,121 @@
                         animation: infinite linear MOV1 5s;
                         margin: 0 1vw;
                         transition: 0.3s;
-                        
-                        &:hover{
-                            width: 100px;
-                            height: 100px;
+                    }
+                    .IC{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        .PS{
+                            width: 80px;
+                            height: 80px;
+                            background-image: url(../icon/PS.PNG);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                        .AI{
+                            width: 80px;
+                            height: 80px;
+                            background-image: url(../icon/AI.PNG);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                        .PRO{
+                            width: 80px;
+                            height: 80px;
+                            background-image: url(../icon/PRO.PNG);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                        .AF{
+                            width: 80px;
+                            height: 80px;
+                            background-image: url(../icon/FR.PNG);
+                            background-repeat: no-repeat;
+                            background-size: contain;
                         }
                     }
-                    .PS{
-                        width: 80px;
-                        height: 80px;
-                        background-image: url(../icon/PS.PNG);
-                        background-repeat: no-repeat;
-                        background-size: contain;
+                    .T5{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        margin: -5vh 1vw;
                     }
-                    .AI{
-                        width: 80px;
-                        height: 80px;
-                        background-image: url(../icon/AI.PNG);
-                        background-repeat: no-repeat;
-                        background-size: contain;
                     }
-                    .PRO{
-                        width: 80px;
-                        height: 80px;
-                        background-image: url(../icon/PRO.PNG);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                    }
-                    .AF{
-                        width: 80px;
-                        height: 80px;
-                        background-image: url(../icon/FR.PNG);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                    }
+                    
                 }
                 .WD{
                     .IcoMG{
                         animation: infinite linear MOV1 5s;
                         margin: 0 1vw;
                         transition: 0.3s;
-                        
-                        &:hover{
-                            width: 100px;
-                            height: 100px;
-                        }
                     }
-                    margin: 3vh 0;
+                    margin: 10vh 0;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: center;
-                    .WO{
-                        width: 80px;
-                        height: 80px;
-                        background-image: url(../icon/WO.PNG);
-                        background-repeat: no-repeat;
-                        background-size: contain;
+                    .IC{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        .WO{
+                            width: 80px;
+                            height: 80px;
+                            background-image: url(../icon/WO.PNG);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                        .EX{
+                            width: 80px;
+                            height: 80px;
+                            background-image: url(../icon/EX.PNG);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                        .PP{
+                            width: 80px;
+                            height: 80px;
+                            background-image: url(../icon/PP.PNG);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
                     }
-                    .EX{
-                        width: 80px;
-                        height: 80px;
-                        background-image: url(../icon/EX.PNG);
-                        background-repeat: no-repeat;
-                        background-size: contain;
+                    .T5{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        margin: -5vh 1vw;
                     }
-                    .PP{
-                        width: 80px;
-                        height: 80px;
-                        background-image: url(../icon/PP.PNG);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                    }
+                    
                 }
                 .CD{
                     .IcoMG{
                         animation: infinite linear MOV1 5s;
                         margin: 0 1vw;
                         transition: 0.3s;
-                        
-                        &:hover{
-                            width: 100px;
-                            height: 100px;
-                        }
                     }
-                    margin: 3vh 0;
+                    .T5{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        margin: -5vh 1vw;
+                    }
+                    margin: 5vh 0;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: center;
+                    .IC{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
                     .HT{
                         width: 80px;
                         height: 80px;
@@ -354,13 +423,14 @@
                         background-image: url(../icon/SCS.PNG);
                         background-repeat: no-repeat;
                         background-size: contain;
+                        }
                     }
-                }
+            }
             }
         }
         .MyLink{
             .WW{
-                background-color: #ffffffAA;
+                background-color: #ffffffDD;
                 padding-top: 6vh;
                 width: 100vw;
                 p{
@@ -408,9 +478,98 @@
         }
     }
 
+    @keyframes MMOV {
+        0%{
+            left: 5vh ;
+            top: 0vh;
+        }
+        25%{
+            left: 10vh ;
+            top: -5vh;
+        }
+        50%{
+            left: -10vh ;
+            top: 0vh;
+        }
+        75%{
+            left: -5vh ;
+            top: -5vh;
+        }
+        100%{
+            left: 5vh ;
+            top: 0vh;
+        }
+    }
+    @keyframes MMOV2 {
+        0%{
+            left: 10vh ;
+            top: 0vh;
+        }
+        25%{
+            left: 20vh ;
+            top: -5vh;
+        }
+        50%{
+            left: 35vh ;
+            top: -10vh;
+        }
+        75%{
+            left: 10vh ;
+            top: -5vh;
+        }
+        100%{
+            left: 10vh ;
+            top: 0vh;
+        }
+    }
+    @keyframes MMOV3 {
+        0%{
+            left: 00vh ;
+            top: -5vh;
+        }
+        25%{
+            left: -35vh ;
+            top: -15vh;
+        }
+        50%{
+            left: 2vh ;
+            top: -20vh;
+        }
+        75%{
+            left: -30vh ;
+            top: -5vh;
+        }
+        100%{
+            left: 0vh ;
+            top: -5vh;
+        }
+    }
+    @keyframes MMOV4 {
+        0%{
+            left: 00vh ;
+            top: -5vh;
+        }
+        25%{
+            left: -10vh ;
+            top: -10vh;
+        }
+        50%{
+            left: 30vh ;
+            top: -20vh;
+        }
+        75%{
+            left: 20vh ;
+            top: -15vh;
+        }
+        100%{
+            left: 0vh ;
+            top: -5vh;
+        }
+    }
+
     .mainer{
         background-color: #3a4d41;
-        background-image: url(../BBG.jpg);
+        background-image: url(../DDS.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -442,14 +601,17 @@
                         text-decoration: none;
                     }
                     .planning{
+                        position: relative;
+                        animation: infinite linear MMOV 30s;
+                        border-radius: 50%;
                         width: 200px;
-                        height: 150px;
+                        height: 200px;
                         background-color: #ffffff99;
                         // background-image: url(../122653.png);
                         // background-repeat: no-repeat;
                         // background-size: cover;
                         // background-attachment: fixed;
-                        line-height: 150px;
+                        line-height: 200px;
                         text-align: center;
                         font-size: 36px;
                         font-weight: 600;
@@ -458,41 +620,50 @@
                         transition: 0.3s;
                         text-decoration: none;
                         &:hover{
-                        background-image: url(../122653.png);
+                        border-radius: 0%;
+                        background-image: url(../WK.jpg);
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-attachment: fixed;
                         color: #fff;
                         text-shadow: rgb(0, 0, 0) 0px 0px 10px;
-                        width: 220px;
+                        width: 320px;
                         height: 170px;
+                        line-height: 170px;
+                        animation-play-state: paused;
                         }
                         
                     }
                     .design{
+                        position: relative;
+                        animation: infinite linear MMOV2 20s;
+                        border-radius: 50%;
                         background-color: #ffffff99;
-                        width: 400px;
-                        height: 150px;
+                        width: 200px;
+                        height: 200px;
                         // background-image: url(../122653.png);
                         // background-repeat: no-repeat;
                         // background-size: cover;
                         // background-attachment: fixed;
-                        line-height: 150px;
+                        line-height: 200px;
                         text-align: center;
                         font-size: 36px;
                         font-weight: 600;
                         color: #000000;
                         transition: 0.3s;
                         &:hover{
-                            background-image: url(../122653.png);
+                            border-radius: 0%;
+                            background-image: url(../DISS.jpg);
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-attachment: fixed;
                             color: #fff;
-                        text-shadow: rgb(0, 0, 0) 0px 0px 10px;
-                        width: 420px;
-                        height: 170px;
-                            }
+                            text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+                            width: 420px;
+                            height: 170px;
+                            line-height: 170px;
+                            animation-play-state: paused;
+                        }
                     }
                 }
                 display: flex;
@@ -514,15 +685,18 @@
                         text-decoration: none;
                     }
                     .code{
+                        position: relative;
+                        animation: infinite linear MMOV3 40s;
+                        border-radius: 50%;
                         background-color: #ffffff99;
                         margin: 0 10px;
-                        width: 300px;
-                        height: 150px;
+                        width: 200px;
+                        height: 200px;
                         // background-image: url(../122653.png);
                         // background-repeat: no-repeat;
                         // background-size: cover;
                         // background-attachment: fixed;
-                        line-height: 150px;
+                        line-height: 200px;
                         text-align: center;
                         font-size: 36px;
                         font-weight: 600;
@@ -530,7 +704,8 @@
                         transition: 0.2s;
                         transition: 0.3s;
                         &:hover{
-                            background-image: url(../122653.png);
+                            border-radius: 0%;
+                            background-image: url(../COD.jpg);
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-attachment: fixed;
@@ -538,24 +713,30 @@
                             text-shadow: rgb(0, 0, 0) 0px 0px 10px;
                             width: 320px;
                             height: 170px;
+                            line-height: 170px;
+                            animation-play-state: paused;
                             }
                     }
                     .Project{
+                        position: relative;
+                        animation: infinite linear MMOV4 30s;
+                        border-radius: 50%;
                         background-color: #ffffff99;
-                        width: 300px;
-                        height: 150px;
+                        width: 200px;
+                        height: 200px;
                         // background-image: url(../122653.png);
                         // background-repeat: no-repeat;
                         // background-size: cover;
                         // background-attachment: fixed;
-                        line-height: 150px;
+                        line-height: 200px;
                         text-align: center;
                         font-size: 36px;
                         font-weight: 600;
                         color: #000000;
                         transition: 0.3s;
                         &:hover{
-                            background-image: url(../122653.png);
+                            border-radius: 0%;
+                            background-image: url(../PR.jpg);
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-attachment: fixed;
@@ -563,6 +744,8 @@
                             text-shadow: rgb(0, 0, 0) 0px 0px 10px;
                             width: 320px;
                             height: 170px;
+                            line-height: 170px;
+                            animation-play-state: paused;
                             }
                     }
                 }
@@ -582,7 +765,7 @@
             font-weight: 600;
         }
         .age{
-            background-color: #163a25;
+            background-color: #0b130e;
             width: 100vw;
             color: #b6e2c5;
             font-size: 12px;
@@ -592,4 +775,3 @@
         }
     }
     
-}

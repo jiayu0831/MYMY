@@ -1,0 +1,1319 @@
+@charset "UTF-8";
+.title_BG {
+  font-weight: bolder;
+  color: #829789;
+  border: #829789 2px solid;
+}
+
+.main_planning .banner_planning {
+  background-image: url(../WK.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_planning .banner_planning .title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bolder;
+  text-shadow: black 0px 0px 10px;
+}
+
+.main_planning .banner_planning .text {
+  color: #fff;
+  font-size: 32px;
+  margin: 20px 0;
+  text-shadow: black 0px 0px 10px;
+}
+
+.main_planning .title_planning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5vh 0;
+  background-color: #0b130e;
+}
+
+.main_planning .title_planning .title_t {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.main_planning .mind_map {
+  margin: 20vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_planning .mind_map .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 2vw 0 5vw;
+}
+
+.main_planning .mind_map .txt .TIT {
+  text-shadow: black 0px 0px 10px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 30px;
+  padding: 1vh -2vw 0 2vw;
+  position: relative;
+}
+
+.main_planning .mind_map .txt .TIT::before {
+  content: "";
+  position: absolute;
+  top: 120%;
+  width: 150px;
+  height: 2px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.main_planning .mind_map .txt .TXT_map {
+  padding: 0 -2vw 0 2vw;
+  font-size: 18px;
+}
+
+.main_planning .mind_map .txt .T_link {
+  font-size: 24px;
+  color: #adc7b6;
+  font-weight: 600;
+  margin-top: 30px;
+  padding: 0 0 0 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main_planning .mind_map .txt .T_link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main_planning .mind_map .page_Mmap .photo_map {
+  width: 400px;
+  height: 300px;
+  margin-right: 5vw;
+  background-image: url(../planning/MAP.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0 10px #32175e;
+          box-shadow: 0 0 10px #32175e;
+}
+
+.main_planning .word_planning {
+  background-image: url(../WK_22.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_planning .word_planning .txt_bottom_planning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: black 0px 0px 10px;
+}
+
+.main_planning .word_planning .txt_bottom_planning .TIT_b {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.main_planning .word_planning .txt_bottom_planning .TIT_b::before {
+  content: "";
+  position: absolute;
+  top: 120%;
+  width: 240px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.main_planning .word_planning .txt_bottom_planning .TXT_WP {
+  font-size: 18px;
+  color: #fff;
+}
+
+.main_planning .word_planning .txt_bottom_planning .BGT {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.main_planning .word_planning .page_WP .photo_WP {
+  background-image: url(../planning/WP.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: white 2px solid;
+  margin: 5vh 0;
+  width: 70vw;
+  height: 300px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.main_planning .word_planning .T_link {
+  font-size: 24px;
+  color: #c9eed5;
+  font-weight: 600;
+  padding: 0 0 0 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 5vh;
+  text-shadow: black 0px 0px 10px;
+}
+
+.main_planning .word_planning .T_link:hover {
+  -webkit-transform: scale(1.22);
+          transform: scale(1.22);
+}
+
+.main_design .banner_dis {
+  background-image: url(../DISS.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_design .banner_dis .title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bolder;
+  text-shadow: black 0px 0px 10px;
+}
+
+.main_design .banner_dis .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 32px;
+  margin: 20px 0;
+  text-shadow: black 0px 0px 10px;
+}
+
+.title_planning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5vh 0;
+  background-color: #8b4f4f;
+}
+
+.title_planning .title_t {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.ps_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ps_main .herP {
+  margin: 5vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ps_main .herP .title_her {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 2vh 0;
+  padding: 2vh 0;
+}
+
+.ps_main .herP .title_her .TIT {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #829789;
+}
+
+.ps_main .herP .title_her .TXT {
+  font-size: 18px;
+}
+
+.ps_main .herP .pto_her {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ps_main .herP .pto_her .PO1 {
+  margin-right: 5px;
+  width: 600px;
+  height: 400px;
+  background-image: url(../Photoshop/人像修圖+合成/M0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ps_main .herP .pto_her .PO2 {
+  margin-left: 5px;
+  width: 600px;
+  height: 400px;
+  background-image: url(../Photoshop/人像修圖+合成/M1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ps_main .herP .PO_T {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2vh 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e3f34;
+}
+
+.ps_main .gis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2vw 0 5vw;
+}
+
+.ps_main .gis .TIT {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #829789;
+  margin-bottom: 20px;
+}
+
+.ps_main .gis .TXT {
+  font-size: 18px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ps_main .gis .gis_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ps_main .gis .gis_main .pot {
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ps_main .gis .gis_main .pot .pto1_g {
+  width: 600px;
+  height: 400px;
+  background-image: url(../Photoshop/改色/APPLE.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ps_main .gis .gis_main .pot .TT {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e3f34;
+}
+
+.ps_main .gis .gis_main .pto {
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ps_main .gis .gis_main .pto .pto2 {
+  width: 600px;
+  height: 400px;
+  background-image: url(../Photoshop/改色/BALL.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ps_main .gis .gis_main .pto .TT {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e3f34;
+}
+
+.ps_main .lug {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ps_main .lug .TIT {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #829789;
+  margin-bottom: 20px;
+}
+
+.ps_main .lug .TXT {
+  font-size: 18px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ps_main .lug .pto_lug {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ps_main .lug .pto_lug .PO1 {
+  width: 350px;
+  height: 200px;
+  background-image: url(../Photoshop/濾鏡應用/A00_2410.JPG);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ps_main .lug .pto_lug .PO2 {
+  width: 350px;
+  height: 200px;
+  background-image: url(../Photoshop/濾鏡應用/婚紗.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ps_main .lug .pto_lug .PO3 {
+  width: 350px;
+  height: 200px;
+  background-image: url(../Photoshop/濾鏡應用/婚紗色溫.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ps_main .lug .pto_p {
+  margin-bottom: 5vh;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e3f34;
+}
+
+.ps_main .lug .pto_b {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ps_main .lug .pto_b .Tt {
+  margin-bottom: 2vh;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e3f34;
+}
+
+.ps_main .lug .pto_b .Pto_b_t {
+  width: 100vw;
+  height: 500px;
+  background-image: url(../Photoshop/濾鏡應用/色溫.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ai_main {
+  background-image: url(../DISS2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  widows: 100vw;
+}
+
+.ai_main .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8vh 0;
+  color: #fff;
+}
+
+.ai_main .icon .TIT {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
+}
+
+.ai_main .icon .TXT {
+  font-size: 18px;
+  text-shadow: 0 0 10px #000;
+  margin-bottom: 2vh;
+}
+
+.ai_main .icon .icon_man {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2vw 0;
+  color: black;
+  background-color: #fffa;
+  width: 100vw;
+  padding: 7vh 0;
+}
+
+.ai_main .icon .icon_man .icon_txt {
+  padding: 0 2vw;
+  width: 30vw;
+  font-size: 18px;
+}
+
+.ai_main .icon .icon_man .ptoo {
+  margin-top: 2vh;
+  background-image: url(../Illustrator/Icon/NA.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 310px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ai_main .icon .TXT_BT {
+  font-size: 18px;
+  text-shadow: 0 0 10px #000;
+}
+
+.ai_main .icon .pto_BT {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4vh;
+}
+
+.ai_main .icon .pto_BT .pto1 {
+  height: 500px;
+  width: 350px;
+  background-image: url(../Illustrator/Icon/UB.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ai_main .icon .pto_BT .pto2 {
+  height: 500px;
+  width: 350px;
+  background-image: url(../Illustrator/Icon/MOON.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ai_main .lowP {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ai_main .lowP .TIT {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
+}
+
+.ai_main .lowP .TXT {
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 0 0 10px #000;
+  margin-bottom: 2vh;
+  padding: 0 15vw;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.ai_main .lowP .lowP1 {
+  margin-top: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.ai_main .lowP .lowP1 .pto_lo {
+  background-image: url(../Illustrator/LowPoly_背景+照片/BGII.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 420px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ai_main .lowP .lowP1 .txt {
+  text-shadow: 0 0 10px #000;
+  margin-top: 2vh;
+}
+
+.ai_main .lowP .lowP2 {
+  margin-top: 5vh;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ai_main .lowP .lowP2 .lowP22 {
+  background-image: url(../Illustrator/LowPoly_背景+照片/LowPoly_照片/MANN.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 420px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ai_main .lowP .lowP2 .lowP3 {
+  background-image: url(../Illustrator/LowPoly_背景+照片/LowPoly_照片/GE.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 420px;
+  margin: 0 15px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ai_main .lowP .lowP2 .lowP4 {
+  background-image: url(../Illustrator/LowPoly_背景+照片/LowPoly_照片/CAT.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 420px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ai_main .lowP .lowP2_t {
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 0 0 10px #000;
+  margin-top: 2vh;
+}
+
+.ai_main .gBg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5vh;
+  padding-top: 5vh;
+  color: #fff;
+  background-color: #000000aa;
+}
+
+.ai_main .gBg .TIT {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000;
+}
+
+.ai_main .gBg .TXT {
+  font-size: 18px;
+  text-shadow: 0 0 10px #000;
+  margin-bottom: 2vh;
+}
+
+.ai_main .gBg .pto_g {
+  background-image: url(../Illustrator/鋼筆工具+及時上色/AN1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 420px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ai_main .gBg .pto_gt {
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  font-size: 18px;
+  text-shadow: 0 0 10px #000;
+}
+
+.ai_main .gBg .pto_g_btom {
+  background-image: url(../Illustrator/鋼筆工具+及時上色/T1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 230px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.ai_main .gBg .btom_txt {
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+  font-size: 18px;
+  text-shadow: 0 0 10px #000;
+}
+
+.main_POR .banner_POR {
+  background-image: url(../PR.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_POR .banner_POR .title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bolder;
+  text-shadow: black 0px 0px 10px;
+}
+
+.main_POR .banner_POR .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 32px;
+  margin: 20px 0;
+  text-shadow: black 0px 0px 10px;
+}
+
+.main_POR .POR_MAN {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  margin: 8vh 0;
+}
+
+.main_POR .POR_MAN .L11 {
+  margin: 0 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 7vh 0 0;
+}
+
+.main_POR .POR_MAN .L11 .TTI {
+  font-size: 32px;
+}
+
+.main_POR .POR_MAN .L11 .LinkTo .L1 {
+  margin: 2vh 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main_POR .POR_MAN .L11 .LinkTo .L1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main_POR .POR_MAN .L11 .LinkTo .L2 {
+  margin: 2vh 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main_POR .POR_MAN .L11 .LinkTo .L2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main_POR .POR_MAN .L11 .LinkTo .L3 {
+  margin: 2vh 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main_POR .POR_MAN .L11 .LinkTo .L3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main_POR .POR_MAN .L11 .LinkTo .L4 {
+  margin: 2vh 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main_POR .POR_MAN .L11 .LinkTo .L4:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main_POR .POR_MAN .L11 a {
+  color: #829789;
+  font-weight: 800;
+}
+
+.main_POR .POR_MAN .L22 {
+  margin: 5vh 10vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_POR .POR_MAN .L22 .TTI2 {
+  font-size: 32px;
+  margin: 2vh 0;
+}
+
+.main_POR .POR_MAN .L22 .Goto {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main_POR .POR_MAN .L22 .Goto:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main_POR .POR_MAN .L22 a {
+  color: #829789;
+  font-weight: 800;
+}
+
+.banner_COD {
+  background-image: url(../COD.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner_COD .title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bolder;
+  text-shadow: black 0px 0px 10px;
+}
+
+.banner_COD .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 32px;
+  margin: 20px 0;
+  text-shadow: black 0px 0px 10px;
+}
+
+.title_COD {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5vh 0;
+  background-color: #10163b;
+}
+
+.title_COD .title_t {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.COD_man {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.COD_man .TIT_ccod {
+  font-size: 32px;
+  color: #829789;
+  margin-top: 5vh;
+  font-weight: bolder;
+}
+
+.COD_man .Link_JS {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  color: #829789;
+}
+
+.COD_man .Link_JS .LJ1 {
+  color: #829789;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 2vh;
+}
+
+.COD_man .Link_JS .LJ1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.COD_man .Link_JS .LJ2 {
+  color: #829789;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 2vh;
+}
+
+.COD_man .Link_JS .LJ2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.COD_man .Link_JS .LJ3 {
+  color: #829789;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 2vh;
+}
+
+.COD_man .Link_JS .LJ3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.COD_man .Link_JS .LJ4 {
+  color: #829789;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 2vh;
+}
+
+.COD_man .Link_JS .LJ4:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.COD_man .Link_JS .a {
+  color: #829789;
+}
+/*# sourceMappingURL=pagee.css.map */
